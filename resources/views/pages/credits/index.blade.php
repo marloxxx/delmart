@@ -178,10 +178,10 @@
                         t.preventDefault();
                         const n = t.target.closest("tr"),
                             o = n.querySelector(
-                                '[data-kt-ecommerce-category-filter="category_name"]')
+                                '[data-kt-ecommerce-category-filter="credit_name"]')
                             .innerText,
                             i = n.querySelector(
-                                '[data-kt-ecommerce-category-filter="category_id"]');
+                                '[data-kt-ecommerce-category-filter="credit_id"]');
                         Swal.fire({
                             text: "Are you sure you want to delete " + o + "?",
                             icon: "warning",
