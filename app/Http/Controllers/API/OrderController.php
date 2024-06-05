@@ -65,7 +65,7 @@ class OrderController extends Controller
         foreach ($carts as $cart) {
             $product = Product::find($cart->product_id);
             $data['total'] += $product->price * $cart->quantity;
-            $product->stock -= $cart->quantity;
+            $product->quantity -= $cart->quantity;
             $product->save();
         }
         $data['description'] = $request->description;
